@@ -17,7 +17,7 @@ gem install soundcloud
 # register a client with YOUR_CLIENT_ID as client_id_
 client = SoundCloud.new(:client_id => YOUR_CLIENT_ID)
 # get 10 hottest tracks
-tracks = client.get('/tracks', :limit => 10, :order => 'hotness')
+tracks = client.get('/tracks', :limit => 10)
 # print each link
 tracks.each do |track|
   puts track.permalink_url
